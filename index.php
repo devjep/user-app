@@ -32,7 +32,7 @@
                         <td>
                             <a href="show.php?id=<?=$value['id']?>" class="btn btn-info btn-sm">INFO</a>
                             <a href="" class="btn btn-success btn-sm">EDIT</a>
-                            <a href="" class="btn btn-danger btn-sm">DELETE</a>
+                            <a href="action/user/delete.php?id=<?=$value['id']?>" class="btn btn-danger btn-sm">DELETE</a>
                         </td>
                     </tr>
                    

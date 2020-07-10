@@ -43,17 +43,32 @@ class User{
             $stmt->bindParam(1, $id);
             $stmt->execute();
             $data = $stmt->fetch();
-           
+        }
+        catch(PDOException $exception)
+        {
+            echo "Connection error: " . $exception->getMessage();
+        }
+        return $data;
+    }
+   
+    public function delete($id)
+    {
+        try{
 
+            $query= "DELETE  FROM customer where id= ?";    
+            $stmt = $this->conn->prepare($query);
+            $stmt->bindParam(1, $id);
+            $stmt->execute();
+            return true;
         }
         catch(PDOException $exception)
         {
             echo "Connection error: " . $exception->getMessage();
         }
         
-       
-        return $data;
     }
+
+
     
 
 

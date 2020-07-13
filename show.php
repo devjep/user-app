@@ -14,9 +14,9 @@
     <hr>
     <div class="card">
         <div class="card-body">
-                <img src="assests/img/upload/<?php echo $data['image']?>" class="rounded" width="100"><br>    
-                <label for="">Name: <?php echo $data['firstname'].' '; echo $data['lastname'];?></label><br>
-                <label for="">Email: <?php echo $data['email'];?></label>
+            <img src="assests/img/upload/<?php echo $data['image']?>" class="rounded" width="100"><br>    
+            <label for="">Name: <?php echo $data['firstname'].' '; echo $data['lastname'];?></label><br>
+            <label for="">Email: <?php echo $data['email'];?></label>
         </div>
     </div>
 </div>

@@ -32,8 +32,8 @@
                         <td><?php echo $value['email']?></td>
                         <td>
                             <a href="show.php?id=<?=$value['id']?>" class="btn btn-info btn-sm">INFO</a>
-                            <a href="" class="btn btn-success btn-sm">EDIT</a>
-                            <a href="Controller/UserController/delete.php?id=<?=$value['id']?>" class="btn btn-danger btn-sm delete">DELETE</a>
+                            <a href="edit.php?id=<?=$value['id']?>" class="btn btn-success btn-sm">EDIT</a>
+                            <a href="delete.php?id=<?=$value['id']?>" class="btn btn-danger btn-sm delete">DELETE</a>
                         </td>
                     </tr>
                    

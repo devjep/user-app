@@ -55,6 +55,29 @@ class User{
     
     }
 
+    public function update($id,$firstname,$lastname,$email,$image){
+        try {
+            $stmt = $this->conn->prepare ("
+                     UPDATE users 
+                        SET firstname = :firstname, lastname  = :lastname, email = :email,
+                        image = :image
+    
+                    WHERE id = :id
+                ");
+            $stmt->bindParam(':id' ,  $id );
+            $stmt->bindParam(':firstname' , $firstname);
+            $stmt->bindParam(':lastname' ,  $lastname);
+            $stmt->bindParam(':email' ,     $email);
+            $stmt->bindParam(':image' ,     $image);
+            $stmt->execute();
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        }
+       
+        return true;
+    
+    }
+
     
     public function getSingleUser($id)
     {

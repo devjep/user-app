@@ -11,8 +11,8 @@
     <hr>
     <h1 class="text-success text-center">PHP CRUD OOP </h1>
     <hr>
-    <div><button class="btn btn-primary mb-2">Add User</button></div>
-        <table class="table e table-bordered table-striped text-center" id="customerTable">
+    <div><a href="store.php" class="btn btn-primary mb-2">ADD USER</a></div>
+        <table class="table e table-bordered table-striped text-center" id="userTable">
             <thead>
                 <tr>
                     <th>Image</th>
@@ -32,7 +32,7 @@
                         <td>
                             <a href="show.php?id=<?=$value['id']?>" class="btn btn-info btn-sm">INFO</a>
                             <a href="" class="btn btn-success btn-sm">EDIT</a>
-                            <a href="action/user/delete.php?id=<?=$value['id']?>" class="btn btn-danger btn-sm">DELETE</a>
+                            <a href="Controller/UserController/delete.php?id=<?=$value['id']?>" class="btn btn-danger btn-sm">DELETE</a>
                         </td>
                     </tr>
                    

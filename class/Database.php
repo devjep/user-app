@@ -4,7 +4,7 @@
         private $host = 'localhost';
         private $username = 'root';
         private $password = '';
-        private $dbname = 'customers';
+        private $dbname = 'crud';
         public $conn;
         public function dbConnection()
         {
